@@ -36,8 +36,6 @@
    
 ## API 詳細使用說明
 
----
-
 ### `/test_connection`
 
 使用 `GET` 方法，將回傳：
@@ -218,11 +216,22 @@
    
 ## API 回傳內容結構
 
----
-
 ### Model｜Chapter
-
+| Key | Value Type | Explanation |
+| --- | --- | --- |
+| `chapter_id` | `str` | 章節的編號 |
+| `chapter_name` | `str` | 章節的名稱 |
+| `chapter_type` | `str` | 章節的類別 | 
+| `chapter_content` | `str` | 章節的內容 |
+| `chapter_questions` | `list<str>` | 章節對應的的題目編號 |
+| `chapter_tags` | `list<str>` | 章節的相關標籤 | 
+| `chapter_importance` | `int` | 章節的重要性 |
 ---
+其中的 `chapter_type` 和 `chapter_content` 關係如下：
+| `chapter_type` | Meaning | 
+| --- | --- |
+| `md` | `chapter_content` 的格式為[學呀擴充的教育用 Markdown 標準](https://github.com/zetria-org/edu-md)。
+| 待決定 | |
 
 ### Model｜Section
 
@@ -233,3 +242,4 @@
 ---
 
 ### Model｜Shared Item
+
