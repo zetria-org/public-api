@@ -257,4 +257,13 @@
 ---
 
 ### Model｜Shared Item
+| Key | Value Type | Explanation |
+| --- | --- | --- |
+| `id` | `int` | 資源項目的編號 |
+| `shared_item_name` | `str` | 資源項目的名稱 |
+| `shared_item_type` | `str` | 資源項目的類別 |
+| `shared_item_approved` | `bool` | 資源項目是否通過審查 |
+| `shared_item_content` | `str` | 資源項目的內容 |
+| `shared_item_tags` | `list<str>` | 資源項目的相關標籤 |
+| `shared_item_upvote` | `int` | 資源項目的點讚數量 |
 
