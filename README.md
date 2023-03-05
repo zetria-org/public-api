@@ -46,6 +46,8 @@
 }
 ```
 
+---
+
 ### `/chapter/<str:chapter_id>`
 
 使用 `GET` 方法，將回傳：
@@ -61,6 +63,8 @@
 }
 ```
 
+---
+
 ### `/chapters`
 
 使用 `GET` 方法，將回傳：
@@ -75,6 +79,8 @@
   // ...
 ]
 ```
+
+---
 
 ### `/shared_items/images`
 
@@ -94,6 +100,8 @@
 ]
 ```
 
+---
+
 ### `/shared_item/<int:id>`
 
 使用 `GET` 方法，將回傳：
@@ -108,6 +116,8 @@
   "shared_item_upvote": <int>,
 }
 ```
+
+---
 
 ### `/shared_item/search`
 
@@ -126,6 +136,8 @@
   // ...
 ]
 ```
+
+---
 
 ### `/course/<str:course_id>`
 
@@ -155,6 +167,8 @@
 }
 ```
 
+---
+
 ### `/courses`
 
 使用 `GET` 方法，將回傳：
@@ -170,6 +184,8 @@
   // ...
 ]
 ```
+
+---
 
 ### `/section/<str:section_id>`
 ```json
