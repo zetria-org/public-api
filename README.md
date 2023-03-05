@@ -226,18 +226,33 @@
 | `chapter_questions` | `list<str>` | 章節對應的的題目編號 |
 | `chapter_tags` | `list<str>` | 章節的相關標籤 | 
 | `chapter_importance` | `int` | 章節的重要性 |
----
+
 其中的 `chapter_type` 和 `chapter_content` 關係如下：
+
 | `chapter_type` | Meaning | 
 | --- | --- |
 | `md` | `chapter_content` 的格式為[學呀擴充的教育用 Markdown 標準](https://github.com/zetria-org/edu-md)。
-| 待決定 | |
-
-### Model｜Section
+| 待決定 | 待決定 |
 
 ---
 
+### Model｜Section
+| Key | Value Type | Explanation |
+| --- | --- | --- |
+| `section_id` | `str` | 單元的編號 |
+| `section_name` | `str` | 單元的名稱 |
+| `chapters` | `list<Chapter>` | 單元中所包含的所有章節，章節資訊包含了 `chapter_type` 、 `chapter_id` 、 `chapter_type` 、 `chapter_tags` ，其意義在 [Model｜Chapter](#modelchapter) 中有所解釋。 |
+---
+
 ### Model｜Course
+
+| Key | Value Type | Explanation |
+| --- | --- | --- |
+| `course_id` | `str` | 課程（即科目）的編號 |
+| `course_name` | `str` | 課程（即科目）的名稱 |
+| `course_category` | `str` | 課程（即科目）的名稱 |
+| `course_description` | `str` | 課程（即科目）的名稱 |
+| `sections` | `list<Section>` | 課程（即科目）所包含的章節。章節資料的結構在 [Model｜Section](#modelsection) 中有所解釋。
 
 ---
 
