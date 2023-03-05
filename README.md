@@ -36,6 +36,8 @@
    
 ## API 詳細使用說明
 
+---
+
 ### `/test_connection`
 
 使用 `GET` 方法，將回傳：
@@ -62,6 +64,7 @@
   "chapter_importance": <int> 
 }
 ```
+回傳的資料內容解釋，請見 [Model｜Chapter](#modelchapter)
 
 ---
 
@@ -79,6 +82,7 @@
   // ...
 ]
 ```
+回傳的資料內容解釋，請見 [Model｜Chapter](#modelchapter)
 
 ---
 
@@ -99,6 +103,7 @@
   // ...
 ]
 ```
+回傳的資料內容解釋，請見 [Model｜Shared Item](#modelshared-item)
 
 ---
 
@@ -116,6 +121,7 @@
   "shared_item_upvote": <int>,
 }
 ```
+回傳的資料內容解釋，請見 [Model｜Shared Item](#modelshared-item)
 
 ---
 
@@ -136,6 +142,7 @@
   // ...
 ]
 ```
+回傳的資料內容解釋，請見 [Model｜Shared Item](#modelshared-item)
 
 ---
 
@@ -166,6 +173,7 @@
   ]
 }
 ```
+回傳的資料內容解釋，請見 [Model｜Course](#modelcourse)
 
 ---
 
@@ -184,6 +192,7 @@
   // ...
 ]
 ```
+回傳的資料內容解釋，請見 [Model｜Course](#modelcourse)
 
 ---
 
@@ -203,7 +212,24 @@
   ]
 }
 ```
+回傳的資料內容解釋，請見 [Model｜Section](#modelsection)
 
 ---
    
-## API 回傳內容結構解釋
+## API 回傳內容結構
+
+---
+
+### Model｜Chapter
+
+---
+
+### Model｜Section
+
+---
+
+### Model｜Course
+
+---
+
+### Model｜Shared Item
