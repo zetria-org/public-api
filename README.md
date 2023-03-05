@@ -12,10 +12,35 @@
 
 學呀平臺資源 API 基底網址為 `https://api.zetria.tw`，請務必以 `https` 的方式連接。在此網址之上有各不同的 API 端點，分別有著不同的功能。此處列出目前開放大眾使用的各 API 端點和其功能概述：
 
-- [`/test_connection`](###test_connection)：測試與伺服器之連結，確認伺服器狀態。
-    
+- [`/test_connection`](#test_connection)：測試與伺服器之連結，確認伺服器狀態。
+- [`/chapter/<str:chapter_id>`](#chapterstrchapter_id)：獲取對應 `chapter_id` 的章節。
+- [`/chapters`](#chapters)：獲取所有章節的概略內容。
+- [`/shared_items/images`](#shared_itemsimages)：獲取所有圖庫中的圖片資訊。
+- [`/shared_item/<int:id>`](#shared_itemintid)：獲取對應 `id` 的分享資源項目。
+- [`/shared_item/search`](#shared_itemsearch)：搜尋分享資源項目。
+- [`/course/<str:course_id>`](#coursestrcourse_id)：獲取對應 `course_id` 的科目。
+- [`/courses`](#courses)：獲取所有科目的概略內容。
+
 ---
    
 ## API 詳細使用說明
 
 ### `/test_connection`
+
+### `/chapter/<str:chapter_id>`
+
+### `/chapters`
+
+### `/shared_items/images`
+
+### `/shared_item/<int:id>`
+
+### `/shared_item/search`
+
+### `/course/<str:course_id>`
+
+### `/courses`
+
+---
+   
+## API 回傳內容結構解釋
