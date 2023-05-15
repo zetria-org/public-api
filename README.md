@@ -236,6 +236,13 @@
 | `md` | `chapter_content` 的格式為[學呀擴充的教育用 Markdown 標準](https://github.com/zetria-org/edu-md)。
 | 待決定 | 待決定 |
 
+> 注意：`chapter_content` 中的圖片網址可能包含已不符時宜的網址。在獲取回覆後，請將其取代為新網址（`chapter_content.replace(old_url_regex g, "new_url")`即可）。舊網址有：
+> - https://zetria-images.ap-south-1.linodeobjects.com
+> - https://zetria.org/content_img
+> - https://www.zetria.org/content_img  
+> 
+> 新網址為：https://raw.githubusercontent.com/zetria-org/content/main/images 。
+
 ---
 
 ### Model｜Section
